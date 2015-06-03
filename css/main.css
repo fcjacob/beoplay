@@ -260,7 +260,7 @@ h3 {
   letter-spacing: 3.5px;
   color: gray;}
 
-h2 {
+#intro h2 {
   text-align: center;
   line-height: 3em;
   text-decoration: none;
@@ -286,8 +286,7 @@ h2 {
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
-  padding: 2% 4% 4%;
-  min-height: 100%;
+  padding: 7% 4%;
 }
 
 #about .about-box {
@@ -322,11 +321,22 @@ p {
 
 #work-header {
   background: white;
-  padding: 2em;
+  padding:  4em 2em 2em;
 }
-#work-header h2 {
+h2 {
   margin: 0 0 .6em;
   line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-family: serif;
+  font-weight: bold;
+  font-variant: italic;
+  font-size: 2em;
+  letter-spacing: 3.5px;
+  color: gray;  
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
 }
 
 #work-header p {
@@ -354,6 +364,63 @@ p {
   width: 100%;
   height: auto;
 }
+
+/* =============================================================================
+   CV
+   ========================================================================== */
+
+#cv {
+  padding: 7% 4%;
+}
+#cv:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+#cv p {
+  text-align: center;
+}
+
+.exp {
+  width: 50%;
+  float: left;
+  padding: 1em 2em;
+}
+.exp.left {
+  border-right: 1px solid gray;
+}
+
+#cv h3 {
+  margin: 1em 0 0;
+  line-height: 1;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+  letter-spacing: 3.5px;
+  color: gray;  
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+}
+
+h4 {
+  margin: 0 0 .6em;
+  line-height: 1em;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: gray;  
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+}
+
 
 /* Style adjustments for viewports that meet the condition ------------------------
 -----------------------------------------------------------------------------------
