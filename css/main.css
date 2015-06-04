@@ -359,11 +359,65 @@ h2 {
 .workbox {
   width: 100%;
   display: block;
+  position: relative;
 }
 .workbox img {
   width: 100%;
   height: auto;
 }
+
+.infobox {
+  height: 90%;
+  width: 90%;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 2em;
+  display: none;
+}
+
+.workbox:hover .infobox {
+  display: block;
+}
+
+.infobox h2 {
+  margin: 1em 0 0;
+  line-height: 1;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+  letter-spacing: 3.5px;
+  color: gray;  
+}
+
+.infobox h2:after {
+  content: '–';
+  display: block;
+  margin: .5em 0;
+  font-weight: 100;
+}
+
+.infobox p {
+  text-align: center;
+}
+
+.infobox a {
+  width: 80%;
+  display: block;
+  padding: .5em;
+  background: white;
+  border: 4px double gray;
+  color: gray;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1.5em;
+  left: 10%;
+  font: 400 italic 1em/1.2 serif;
+}
+
 
 /* =============================================================================
    CV
